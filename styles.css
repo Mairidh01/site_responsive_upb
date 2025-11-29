@@ -1,0 +1,28 @@
+header h1 {
+    margin: 35px 0;
+        text-align: center;
+        font-size: 3.5em;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    font-weight: 400;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.menu-nav a:hover {
+    color: rgb(4, 16, 94);
+}
