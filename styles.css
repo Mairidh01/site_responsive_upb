@@ -1,14 +1,26 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 header h1 {
-    margin: 35px 0;
-        text-align: center;
-        font-size: 3.5em;
-        font-family: 'Times New Roman', Times, serif;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .menu-nav {
+    font-size: 0.8em;
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -16,13 +28,192 @@ header h1 {
 
 .menu-nav a {
     text-decoration: none;
-    color: rgb(45, 44, 44);
-    font-weight: 400;
+    color: black;
     transition: color 0.3s ease;
     padding: 0.5rem 0;
     position: relative;
 }
 
 .menu-nav a:hover {
-    color: rgb(4, 16, 94);
+    color: #555;
+}
+
+.menu-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0073ff;
+    transition: width 0.3s ease;
+}
+
+.menu-nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    margin-top: 10px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 20rem 3rem;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 3rem;
+}
+
+.hero-section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.services-section {
+    background: #efefef;
+    text-align: center;
+    padding: 13rem 3rem;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin: 3rem 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.card-service {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.422);
+}
+
+.card-service p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-section {
+    padding: 8rem 3rem;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 3rem 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.card-gallery img {
+    border-radius: 20px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.926);
+}
+
+.footer {
+    text-align: center;
+    padding: 0.9rem;
+    background-color: #efefef;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .menu-nav {
+        gap: 1.5rem;
+    }
+
+    .hero-section {
+        padding: 31rem 2rem;
+    }
+
+    .services-section {
+        padding: 16rem 2rem;
+    }
+
+    .services-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery-section {
+        padding: 7rem 3rem;
+    }
+
+    .card-gallery img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .hero-section {
+        padding: 15rem 2rem;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-section {
+        padding: 8rem 3rem;
+    }
+
+    .services-container {
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .card-service {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 20px;
+        text-align: center;
+        width: 220px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.422);
+    }
+
+    .card-service h3 {
+        font-size: 1.5em;
+    }
+
+    .card-service p {
+        font-size: 1em;
+    }
 }
