@@ -17,7 +17,7 @@ header h1 {
 }
 
 .menu-nav {
-    font-size: 0.8em;
+    font-size: 1.1em;
     display: flex;
     list-style: none;
     gap: 2.5rem;
@@ -59,7 +59,7 @@ main {
 
 .hero-section {
     text-align: center;
-    padding: 20rem 3rem;
+    padding: 18rem 3rem;
 }
 
 .hero-section h2 {
@@ -96,8 +96,13 @@ main {
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
-    width: 220px;
+    width: 280px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.422);
+}
+
+.card-service h3 {
+    font-size: 1.6em;
+    margin-bottom: 1rem;
 }
 
 .card-service p {
@@ -146,15 +151,33 @@ main {
     }
 
     .menu-nav {
+        font-size: 1.3em;
         gap: 1.5rem;
     }
 
     .hero-section {
-        padding: 31rem 2rem;
+        padding: 29rem 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.3em;
     }
 
     .services-section {
         padding: 16rem 2rem;
+    }
+
+    .services-section h2 {
+        font-size: 2.6em;
+    }
+
+    .card-service h3 {
+        font-size: 1.6em;
+        margin-bottom: 1rem;
+    }
+
+    .card-service p {
+        font-size: 1.1em;
     }
 
     .services-container {
@@ -162,7 +185,11 @@ main {
     }
 
     .gallery-section {
-        padding: 7rem 3rem;
+        padding: 8rem 3rem;
+    }
+
+    .gallery-section h2 {
+        font-size: 2.6em;
     }
 
     .card-gallery img {
@@ -171,7 +198,6 @@ main {
     }
 }
 
-
 @media (max-width: 768px) {
 
     header h1 {
@@ -179,7 +205,7 @@ main {
     }
 
     .hero-section {
-        padding: 15rem 2rem;
+        padding: 18rem 2rem;
     }
 
     .services-container {
