@@ -16,23 +16,14 @@ Incluye un **header fijo**, menús con animaciones, diseño responsivo y estilos
 
 ## Estructura del proyecto
 /
-
 ├── index.html
-
 ├── styles.css
-
 └── public/
-
     ├── img1.avif
-
     ├── img2.avif
-
     ├── img3.avif
-
     ├── img4.avif
-
     ├── img5.avif
-    
     └── img6.avif
 
 ---
